@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-08T07:30:53.832607+00:00",
+  "generated_at": "2026-11-08T07:36:47.812833+00:00",
   "stats": {
-    "total_solved": 17,
+    "total_solved": 18,
     "by_language": {
       "Go": 17,
-      "C++": 0
+      "C++": 1
     },
     "categories_count": 9
   },
@@ -33,6 +33,18 @@
         "formula_used": "Parity state-space reduction; terminal losing states: (evens == 0 && odds == 3) || (evens == 1 && odds == 1)",
         "language": "Go",
         "file": "Game_Theory/2261C_i_know_about_a_million_things.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2271B",
+        "problem_name": "MEX Game",
+        "title": "MEX Game",
+        "category": "Game Theory / Math",
+        "time_complexity": "O(N) -> Single frequency pass.",
+        "space_complexity": "O(N) -> Frequency array storage.",
+        "formula_used": "Find smallest M where count[M] < 2k. Alice wins iff count[M] == 2k - 1.",
+        "language": "C++",
+        "file": "Game_Theory/2271B_MEX_Game.cpp",
         "has_tests": false
       }
     ],

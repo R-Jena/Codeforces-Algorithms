@@ -8,6 +8,7 @@ Automated problem index categorized by algorithmic taxonomy.
 |---|---|---|---|---|
 | [Hey It's Me Souvlakity](../Game_Theory/2261A_Souvlakity.go) | Game Theory | O(N) | O(1) | Binary string ownership range evaluation; score = lastIndex('1') - firstIndex('1') for count >= 3, with base states for count <= 2 |
 | [I Know About a Million Things](../Game_Theory/2261C_i_know_about_a_million_things.go) | Game Theory | O(N) -> Pure byte-level custom parser. Zero reflection overhead. | O(1) -> Absolute bare-metal. Slices bypassed entirely. | Parity state-space reduction; terminal losing states: (evens == 0 && odds == 3) \|\| (evens == 1 && odds == 1) |
+| [MEX Game](../Game_Theory/2271B_MEX_Game.cpp) | Game Theory / Math | O(N) -> Single frequency pass. | O(N) -> Frequency array storage. | Find smallest M where count[M] < 2k. Alice wins iff count[M] == 2k - 1. |
 
 ## Greedy
 
