@@ -1,7 +1,7 @@
 {
-  "benchmark_timestamp": "2026-11-08T07:36:47.765410+00:00",
+  "benchmark_timestamp": "2026-11-09T04:51:52.393026+00:00",
   "runs_per_solution": 5,
-  "total_solutions": 18,
+  "total_solutions": 19,
   "results": [
     {
       "file": "Game_Theory/2261A_Souvlakity.go",
@@ -108,6 +108,12 @@
     {
       "file": "Two_Pointers/2264A_Rumb_Needs_a_Hand.go",
       "language": "Go",
+      "status": "SKIPPED",
+      "reason": "Missing test fixtures (input.txt or expected.txt)"
+    },
+    {
+      "file": "Two_Pointers/2267A_Turn_Into_a_Palindrome.cpp",
+      "language": "C++",
       "status": "SKIPPED",
       "reason": "Missing test fixtures (input.txt or expected.txt)"
     }

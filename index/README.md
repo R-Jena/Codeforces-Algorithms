@@ -64,4 +64,5 @@ Automated problem index categorized by algorithmic taxonomy.
 | Problem | Category | Time | Space | Formula/Notes |
 |---|---|---|---|---|
 | [Rumb Needs a Hand](../Two_Pointers/2264A_Rumb_Needs_a_Hand.go) | Two Pointers | O(N) -> Single inward pass using two pointers. | O(N) -> Array storage, O(1) auxiliary space. | Symmetric matching for misplaced elements: p[left] == right && p[right] == left |
+| [Turn Into a Palindrome](../Two_Pointers/2267A_Turn_Into_a_Palindrome.cpp) | Two Pointers / Strings | O(N) -> Single inward pass. | O(1) -> In-place character checking. | cost = 1 if one char is c, cost = 2 if neither is c for non-matching pairs |
 
