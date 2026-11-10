@@ -1,7 +1,7 @@
 {
-  "benchmark_timestamp": "2026-11-09T04:51:52.393026+00:00",
+  "benchmark_timestamp": "2026-11-10T06:38:14.906020+00:00",
   "runs_per_solution": 5,
-  "total_solutions": 19,
+  "total_solutions": 20,
   "results": [
     {
       "file": "Game_Theory/2261A_Souvlakity.go",
@@ -84,6 +84,12 @@
     {
       "file": "Prefix_Sum/2276C_Subarrays.go",
       "language": "Go",
+      "status": "SKIPPED",
+      "reason": "Missing test fixtures (input.txt or expected.txt)"
+    },
+    {
+      "file": "Sorting/2267B_Fashionable_Array.cpp",
+      "language": "C++",
       "status": "SKIPPED",
       "reason": "Missing test fixtures (input.txt or expected.txt)"
     },

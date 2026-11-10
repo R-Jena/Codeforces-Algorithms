@@ -45,6 +45,7 @@ Automated problem index categorized by algorithmic taxonomy.
 
 | Problem | Category | Time | Space | Formula/Notes |
 |---|---|---|---|---|
+| [Fashionable Array](../Sorting/2267B_Fashionable_Array.cpp) | Greedy / Sorting | O(N log N) -> Single pass grouping followed by custom sort. | O(N) -> Map and vector storage for elements. | Sort by occurrence rank (ascending), then by value (descending) |
 | [Unrequited Love](../Sorting/2275C_Unrequited_Love.go) | Sorting | O(N log N) -> Standard sorting for frequency counting. Simple, clean, and cache-friendly. | O(N) -> Single slice allocation, no map overhead. | Triad mapping v[i] = a[i] + a[i+2] - a[i+4], sorted frequency count sum(c * (c - 1) / 2) minus overlapping distance-2 and distance-4 pairs |
 
 ## Stacks
