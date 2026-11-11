@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-10T06:38:14.956704+00:00",
+  "generated_at": "2026-11-11T05:32:57.832126+00:00",
   "stats": {
-    "total_solved": 20,
+    "total_solved": 21,
     "by_language": {
       "Go": 17,
-      "C++": 3
+      "C++": 4
     },
     "categories_count": 9
   },
@@ -49,6 +49,18 @@
       }
     ],
     "Greedy": [
+      {
+        "problem_id": "2259C",
+        "problem_name": "101",
+        "title": "101",
+        "category": "Greedy / Constructive Algorithms",
+        "time_complexity": "O(N) -> Single pass from left and right.",
+        "space_complexity": "O(1) -> In-place modification of array.",
+        "formula_used": "Find leftmost possible 1 and rightmost possible 1, make everything between them 0.",
+        "language": "C++",
+        "file": "Greedy/2259C_101.cpp",
+        "has_tests": false
+      },
       {
         "problem_id": "2262A1",
         "problem_name": "Floor of MEX (Easy Version)",

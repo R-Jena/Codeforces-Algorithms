@@ -1,7 +1,7 @@
 {
-  "benchmark_timestamp": "2026-11-10T06:38:14.906020+00:00",
+  "benchmark_timestamp": "2026-11-11T05:32:57.789261+00:00",
   "runs_per_solution": 5,
-  "total_solutions": 20,
+  "total_solutions": 21,
   "results": [
     {
       "file": "Game_Theory/2261A_Souvlakity.go",
@@ -17,6 +17,12 @@
     },
     {
       "file": "Game_Theory/2271B_MEX_Game.cpp",
+      "language": "C++",
+      "status": "SKIPPED",
+      "reason": "Missing test fixtures (input.txt or expected.txt)"
+    },
+    {
+      "file": "Greedy/2259C_101.cpp",
       "language": "C++",
       "status": "SKIPPED",
       "reason": "Missing test fixtures (input.txt or expected.txt)"
