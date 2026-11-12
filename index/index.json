@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-11T05:32:57.832126+00:00",
+  "generated_at": "2026-11-12T05:34:12.530357+00:00",
   "stats": {
-    "total_solved": 21,
+    "total_solved": 22,
     "by_language": {
       "Go": 17,
-      "C++": 4
+      "C++": 5
     },
     "categories_count": 9
   },
@@ -109,6 +109,18 @@
         "formula_used": "(y + i) % (x + i) == (y - x) % (x + i); early termination with remaining * (y - x) when x + i > y - x",
         "language": "Go",
         "file": "Math/2260B_monocarp_and_projects.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2267C",
+        "problem_name": "GCD Treasury",
+        "title": "GCD Treasury",
+        "category": "Math / Greedy / Number Theory",
+        "time_complexity": "O(sqrt(X) + N * k) -> Factorize X only, then sweep array for each prime factor.",
+        "space_complexity": "O(N) -> Array storage only.",
+        "formula_used": "max over all prime factors 'p' of x: sum of all a_i where a_i % p == 0",
+        "language": "C++",
+        "file": "Math/2267C_GCD_Treasury.cpp",
         "has_tests": false
       },
       {
