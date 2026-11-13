@@ -230,6 +230,32 @@ func scanInvariants(s string) (bool, bool) {
 }
 ```
 
+**ट्रीज़ (Trees) &mdash; स्टैटिक फॉरवर्ड स्टार ट्रैवर्सल (Static Forward Star Traversal):**
+-   **फॉर्मूला:** डायनेमिक हीप एलोकेशन (`std::vector`) को बायपास करके L1 कैश लोकैलिटी को अधिकतम करने के लिए फ्लैट ऐरेज़ `to[++edge_cnt] = v; nxt[edge_cnt] = head[u]; head[u] = edge_cnt;` का उपयोग।
+```cpp
+// std::vector ओवरहेड को बायपास करते हुए अल्ट्रा-लो लेटेंसी स्टैटिक ग्राफ ट्रैवर्सल; O(N) टाइम, O(N) स्पेस
+const int MAXN = 200005;
+int head[MAXN], to[MAXN << 1], nxt[MAXN << 1], edge_cnt = 0;
+
+// O(1) इन-प्लेस (in-place) एज (edge) एडिशन
+inline void add_edge(int u, int v) {
+    to[++edge_cnt] = v;
+    nxt[edge_cnt] = head[u];
+    head[u] = edge_cnt;
+}
+
+// कैश-फ्रेंडली (cache-friendly) फ्लैट ऐरे DFS ट्रैवर्सल
+void dfs(int u, int p) {
+    for (int e = head[u]; e; e = nxt[e]) {
+        int v = to[e];
+        if (v != p) {
+            // चाइल्ड नोड 'v' को प्रोसेस करें
+            dfs(v, u);
+        }
+    }
+}
+```
+
 ---
 
 ## इंजीनियरिंग स्टैंडर्ड्स (Engineering Standards)

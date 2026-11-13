@@ -230,6 +230,32 @@ func scanInvariants(s string) (bool, bool) {
 }
 ```
 
+**Trees &mdash; Static Forward Star Traversal:**
+-   **Formula:** Bypasses dynamic heap allocation (`std::vector`) to maximize L1 cache locality via contiguous flat arrays `to[++edge_cnt] = v; nxt[edge_cnt] = head[u]; head[u] = edge_cnt;`.
+```cpp
+// static graph traversal bypassing vector overhead; O(N) time, O(N) space
+const int MAXN = 200005;
+int head[MAXN], to[MAXN << 1], nxt[MAXN << 1], edge_cnt = 0;
+
+// O(1) in-place edge addition
+inline void add_edge(int u, int v) {
+    to[++edge_cnt] = v;
+    nxt[edge_cnt] = head[u];
+    head[u] = edge_cnt;
+}
+
+// Cache-friendly flat array DFS traversal
+void dfs(int u, int p) {
+    for (int e = head[u]; e; e = nxt[e]) {
+        int v = to[e];
+        if (v != p) {
+            // Process child node 'v'
+            dfs(v, u);
+        }
+    }
+}
+```
+
 ---
 
 ## Engineering Standards
