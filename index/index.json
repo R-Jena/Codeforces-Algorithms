@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-12T05:34:12.530357+00:00",
+  "generated_at": "2026-11-13T05:37:55.452642+00:00",
   "stats": {
-    "total_solved": 22,
+    "total_solved": 23,
     "by_language": {
       "Go": 17,
-      "C++": 5
+      "C++": 6
     },
-    "categories_count": 9
+    "categories_count": 10
   },
   "categories": {
     "Game_Theory": [
@@ -263,6 +263,20 @@
         "formula_used": "String invariance scan: total unique lengths = 1 + canIncrease (if s[i-1]==s[i]==s[i+1]) + canDecrease (if s[i-1]!=s[i]!=s[i+1])",
         "language": "Go",
         "file": "Strings/2276B_Replace_and_Compress.go",
+        "has_tests": false
+      }
+    ],
+    "Trees": [
+      {
+        "problem_id": "2290H",
+        "problem_name": "Extra Road",
+        "title": "Extra Road",
+        "category": "Trees / Greedy",
+        "time_complexity": "O(N) -> Pure array-based DFS traversing.",
+        "space_complexity": "O(N) -> Flat static arrays (Forward Star), ZERO dynamic allocation.",
+        "formula_used": "K = max(third_max_at_root, max_{x!=1}(second_max_at_x)); ans = n - K",
+        "language": "C++",
+        "file": "Trees/2290H_Extra_Road.cpp",
         "has_tests": false
       }
     ],

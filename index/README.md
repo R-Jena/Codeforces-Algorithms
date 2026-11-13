@@ -62,6 +62,12 @@ Automated problem index categorized by algorithmic taxonomy.
 |---|---|---|---|---|
 | [Replace and Compress](../Strings/2276B_Replace_and_Compress.go) | Strings | O(N) -> Single pass string scan. Zero actual compression simulations. | O(N) -> To store the string in memory, optimal for 3*10^5 constraints. | String invariance scan: total unique lengths = 1 + canIncrease (if s[i-1]==s[i]==s[i+1]) + canDecrease (if s[i-1]!=s[i]!=s[i+1]) |
 
+## Trees
+
+| Problem | Category | Time | Space | Formula/Notes |
+|---|---|---|---|---|
+| [Extra Road](../Trees/2290H_Extra_Road.cpp) | Trees / Greedy | O(N) -> Pure array-based DFS traversing. | O(N) -> Flat static arrays (Forward Star), ZERO dynamic allocation. | K = max(third_max_at_root, max_{x!=1}(second_max_at_x)); ans = n - K |
+
 ## Two Pointers
 
 | Problem | Category | Time | Space | Formula/Notes |
