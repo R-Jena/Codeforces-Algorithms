@@ -1,15 +1,29 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-13T05:41:23.444601+00:00",
+  "generated_at": "2026-11-14T04:53:39.216615+00:00",
   "stats": {
-    "total_solved": 23,
+    "total_solved": 24,
     "by_language": {
       "Go": 17,
-      "C++": 6
+      "C++": 7
     },
-    "categories_count": 10
+    "categories_count": 11
   },
   "categories": {
+    "Binary_Search": [
+      {
+        "problem_id": "2290G1",
+        "problem_name": "Lakeside Trail (Easy Version)",
+        "title": "Lakeside Trail (Easy Version)",
+        "category": "Binary Search / Math",
+        "time_complexity": "O(N^2 log(10^9)) -> Global bounding over circular distances inside BS.",
+        "space_complexity": "O(N) -> Array storage only, zero DP matrix overhead.",
+        "formula_used": "req_h[i] = max_{j}(h[j] - dist(i, j) * S)",
+        "language": "C++",
+        "file": "Binary_Search/2290G1_Lakeside_Trail_Easy.cpp",
+        "has_tests": false
+      }
+    ],
     "Game_Theory": [
       {
         "problem_id": "2261A",

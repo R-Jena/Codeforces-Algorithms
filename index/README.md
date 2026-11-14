@@ -2,6 +2,12 @@
 
 Automated problem index categorized by algorithmic taxonomy.
 
+## Binary Search
+
+| Problem | Category | Time | Space | Formula/Notes |
+|---|---|---|---|---|
+| [Lakeside Trail (Easy Version)](../Binary_Search/2290G1_Lakeside_Trail_Easy.cpp) | Binary Search / Math | O(N^2 log(10^9)) -> Global bounding over circular distances inside BS. | O(N) -> Array storage only, zero DP matrix overhead. | req_h[i] = max_{j}(h[j] - dist(i, j) * S) |
+
 ## Game Theory
 
 | Problem | Category | Time | Space | Formula/Notes |
