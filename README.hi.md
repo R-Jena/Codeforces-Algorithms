@@ -53,6 +53,29 @@ func readInt(in *bufio.Reader) int {
 }
 ```
 
+**बाइनरी सर्च (Binary Search) &mdash; मोनोटोनिक प्रेडिकेट ऑप्टिमाइज़ेशन:**
+-   **फॉर्मूला:** एक बूलियन (boolean) प्रेडिकेट फंक्शन के ऊपर मोनोटोनिक स्टेट रिडक्शन `low = mid + 1` या `high = mid - 1` के ज़रिए इष्टतम (optimal) बाउंड्रीज़ को रिज़ॉल्व करता है।
+```cpp
+// उत्तर खोजने (binary search on answer) के लिए यूनिवर्सल टेम्पलेट; टाइम: O(log(MAX_VAL) * O(check))
+long long binarySearchTarget(long long low, long long high) {
+    long long optimal_ans = high; // या 'low', यह इस बात पर निर्भर करता है कि हम minimize कर रहे हैं या maximize
+    
+    while (low <= high) {
+        // इंटीजर ओवरफ्लो (integer overflow) से बचने के लिए सुरक्षित मिडपॉइंट कैलकुलेशन
+        long long mid = low + (high - low) / 2;
+        
+        // check(mid) वैलिडेट करता है कि क्या 'mid' टारगेट कंस्ट्रेंट्स को पूरा करता है
+        if (check(mid)) {
+            optimal_ans = mid;
+            high = mid - 1; // (minimization के लिए) अधिक टाइट/छोटा बाउंड खोजने का प्रयास करें
+        } else {
+            low = mid + 1;  // कंस्ट्रेंट्स पूरे नहीं हुए, बाउंड को रिलैक्स करें (वैल्यू बढ़ाएं)
+        }
+    }
+    return optimal_ans;
+}
+```
+
 **गेम थ्योरी: पैरिटी स्टेट इवैल्यूएशन:**
 -   **फॉर्मूला:** सीक्वेंस कॉन्फ़िगरेशन के बजाय कंपोनेंट ऑब्जेक्ट पैरिटी के माध्यम से टर्मिनल स्टेट्स को सिमेट्रिक रूप से निर्धारित करता है।
 ```go

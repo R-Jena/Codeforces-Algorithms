@@ -53,6 +53,29 @@ func readInt(in *bufio.Reader) int {
 }
 ```
 
+**Binary Search &mdash; Monotonic Predicate Optimization:**
+-   **Formula:** Resolves optimal state boundaries via monotonic condition reduction `low = mid + 1` or `high = mid - 1` over a boolean predicate function.
+```cpp
+// Universal template for binary search on answer; Time: O(log(MAX_VAL) * O(check))
+long long binarySearchTarget(long long low, long long high) {
+    long long optimal_ans = high; // Or 'low', depending on whether we minimize or maximize
+    
+    while (low <= high) {
+        // Safe midpoint calculation to prevent integer overflow
+        long long mid = low + (high - low) / 2;
+        
+        // check(mid) validates if 'mid' satisfies the target constraints
+        if (check(mid)) {
+            optimal_ans = mid;
+            high = mid - 1; // Try to find a tighter/smaller valid bound (for minimization)
+        } else {
+            low = mid + 1;  // Constraints not met, relax the bound (increase magnitude)
+        }
+    }
+    return optimal_ans;
+}
+```
+
 **Game Theory: Parity State Evaluation:**
 -   **Formula:** Determines terminal states symmetrically via component object parity rather than sequence configuration.
 ```go
