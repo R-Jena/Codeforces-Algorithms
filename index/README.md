@@ -7,6 +7,7 @@ Automated problem index categorized by algorithmic taxonomy.
 | Problem | Category | Time | Space | Formula/Notes |
 |---|---|---|---|---|
 | [Lakeside Trail (Easy Version)](../Binary_Search/2290G1_Lakeside_Trail_Easy.cpp) | Binary Search / Math | O(N^2 log(10^9)) -> Global bounding over circular distances inside BS. | O(N) -> Array storage only, zero DP matrix overhead. | req_h[i] = max_{j}(h[j] - dist(i, j) * S) |
+| [Lakeside Trail (Hard Version)](../Binary_Search/2290G2_Lakeside_Trail_Hard.cpp) | Binary Search / Dynamic Programming | O(N log(MAX_H)) -> Binary Search with O(N) circular DP propagation. | O(N) -> Flat static arrays, ZERO dynamic allocation. | req[curr] = max(req[curr], req[neighbor] - S) via 2-pass zero-modulo propagation |
 
 ## Game Theory
 

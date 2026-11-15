@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-14T04:56:38.469017+00:00",
+  "generated_at": "2026-11-15T04:58:13.082525+00:00",
   "stats": {
-    "total_solved": 24,
+    "total_solved": 25,
     "by_language": {
       "Go": 17,
-      "C++": 7
+      "C++": 8
     },
     "categories_count": 11
   },
@@ -21,6 +21,18 @@
         "formula_used": "req_h[i] = max_{j}(h[j] - dist(i, j) * S)",
         "language": "C++",
         "file": "Binary_Search/2290G1_Lakeside_Trail_Easy.cpp",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2290G2",
+        "problem_name": "Lakeside Trail (Hard Version)",
+        "title": "Lakeside Trail (Hard Version)",
+        "category": "Binary Search / Dynamic Programming",
+        "time_complexity": "O(N log(MAX_H)) -> Binary Search with O(N) circular DP propagation.",
+        "space_complexity": "O(N) -> Flat static arrays, ZERO dynamic allocation.",
+        "formula_used": "req[curr] = max(req[curr], req[neighbor] - S) via 2-pass zero-modulo propagation",
+        "language": "C++",
+        "file": "Binary_Search/2290G2_Lakeside_Trail_Hard.cpp",
         "has_tests": false
       }
     ],
