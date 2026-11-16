@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-15T04:58:13.082525+00:00",
+  "generated_at": "2026-11-16T11:34:10.529295+00:00",
   "stats": {
-    "total_solved": 25,
+    "total_solved": 26,
     "by_language": {
       "Go": 17,
-      "C++": 8
+      "C++": 9
     },
     "categories_count": 11
   },
@@ -207,6 +207,18 @@
         "formula_used": "min(b, a - b) if a > b else -1",
         "language": "Go",
         "file": "Math/2276A_Perfect_Sandwiches.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2290F",
+        "problem_name": "Value Counters",
+        "title": "Value Counters",
+        "category": "Math / Constructive Algorithms",
+        "time_complexity": "O(N) -> Single mathematical pass to determine unique positions.",
+        "space_complexity": "O(N) -> Flat arrays for permutation construction.",
+        "formula_used": "pos = b[v] + n + 1 - v; Derived from canceling out L_v in pair counts.",
+        "language": "C++",
+        "file": "Math/2290F_Value_Counters.cpp",
         "has_tests": false
       }
     ],
