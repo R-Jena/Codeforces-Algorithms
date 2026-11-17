@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-16T11:34:10.529295+00:00",
+  "generated_at": "2026-11-17T03:21:57.766073+00:00",
   "stats": {
-    "total_solved": 26,
+    "total_solved": 27,
     "by_language": {
       "Go": 17,
-      "C++": 9
+      "C++": 10
     },
     "categories_count": 11
   },
@@ -71,6 +71,18 @@
         "formula_used": "Find smallest M where count[M] < 2k. Alice wins iff count[M] == 2k - 1.",
         "language": "C++",
         "file": "Game_Theory/2271B_MEX_Game.cpp",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2290E",
+        "problem_name": "Alice, Bob and Stones",
+        "title": "Alice, Bob and Stones",
+        "category": "Game Theory / Math",
+        "time_complexity": "O(N) -> Single pass parity calculation.",
+        "space_complexity": "O(1) -> Zero memory allocation overhead.",
+        "formula_used": "Game is fixed-length. Moves parity depends only on piles where i % (k + 1) == 1.",
+        "language": "C++",
+        "file": "Game_Theory/2290E_Alice_Bob_Stones.cpp",
         "has_tests": false
       }
     ],

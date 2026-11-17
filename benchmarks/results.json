@@ -1,7 +1,7 @@
 {
-  "benchmark_timestamp": "2026-11-16T11:34:10.487651+00:00",
+  "benchmark_timestamp": "2026-11-17T03:21:57.717978+00:00",
   "runs_per_solution": 5,
-  "total_solutions": 26,
+  "total_solutions": 27,
   "results": [
     {
       "file": "Binary_Search/2290G1_Lakeside_Trail_Easy.cpp",
@@ -29,6 +29,12 @@
     },
     {
       "file": "Game_Theory/2271B_MEX_Game.cpp",
+      "language": "C++",
+      "status": "SKIPPED",
+      "reason": "Missing test fixtures (input.txt or expected.txt)"
+    },
+    {
+      "file": "Game_Theory/2290E_Alice_Bob_Stones.cpp",
       "language": "C++",
       "status": "SKIPPED",
       "reason": "Missing test fixtures (input.txt or expected.txt)"
