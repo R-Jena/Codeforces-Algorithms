@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-17T03:21:57.766073+00:00",
+  "generated_at": "2026-11-18T05:08:13.922292+00:00",
   "stats": {
-    "total_solved": 27,
+    "total_solved": 28,
     "by_language": {
       "Go": 17,
-      "C++": 10
+      "C++": 11
     },
     "categories_count": 11
   },
@@ -133,6 +133,18 @@
         "formula_used": "s_new \u2208 {a_i, s + a_i, 2s + a_i}; track only min_s and max_s",
         "language": "Go",
         "file": "Greedy/2274B_Prefix.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2290D",
+        "problem_name": "Letters Down",
+        "title": "Letters Down",
+        "category": "Greedy / Strings",
+        "time_complexity": "O(N) -> Single pass with interval marking.",
+        "space_complexity": "O(1) -> 26-element boolean array for the alphabet.",
+        "formula_used": "Total unique alphabet adjacent edges required to bridge all differing pairs.",
+        "language": "C++",
+        "file": "Greedy/2290D_Letters_Down.cpp",
         "has_tests": false
       }
     ],
