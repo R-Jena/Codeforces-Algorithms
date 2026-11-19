@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-18T05:08:13.922292+00:00",
+  "generated_at": "2026-11-19T11:02:32.227752+00:00",
   "stats": {
-    "total_solved": 28,
+    "total_solved": 29,
     "by_language": {
       "Go": 17,
-      "C++": 11
+      "C++": 12
     },
     "categories_count": 11
   },
@@ -297,6 +297,18 @@
         "formula_used": "Triad mapping v[i] = a[i] + a[i+2] - a[i+4], sorted frequency count sum(c * (c - 1) / 2) minus overlapping distance-2 and distance-4 pairs",
         "language": "Go",
         "file": "Sorting/2275C_Unrequited_Love.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2290C",
+        "problem_name": "2290C",
+        "title": "2290C",
+        "category": "Constructive Algorithms / Greedy / Sorting",
+        "time_complexity": "O(N log N) -> Single sort + linear 3-bucket partition.",
+        "space_complexity": "O(N) -> Flat static arrays, ZERO dynamic allocation.",
+        "formula_used": "max_visible = sum(min(freq[x], 2)); arrange as [1st_copies_asc, 3rd+_copies, 2nd_copies_desc]",
+        "language": "C++",
+        "file": "Sorting/2290C_Books_on_a_Shelf.cpp",
         "has_tests": false
       }
     ],

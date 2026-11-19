@@ -1,7 +1,7 @@
 {
-  "benchmark_timestamp": "2026-11-18T05:08:13.870641+00:00",
+  "benchmark_timestamp": "2026-11-19T11:02:32.186006+00:00",
   "runs_per_solution": 5,
-  "total_solutions": 28,
+  "total_solutions": 29,
   "results": [
     {
       "file": "Binary_Search/2290G1_Lakeside_Trail_Easy.cpp",
@@ -138,6 +138,12 @@
     {
       "file": "Sorting/2275C_Unrequited_Love.go",
       "language": "Go",
+      "status": "SKIPPED",
+      "reason": "Missing test fixtures (input.txt or expected.txt)"
+    },
+    {
+      "file": "Sorting/2290C_Books_on_a_Shelf.cpp",
+      "language": "C++",
       "status": "SKIPPED",
       "reason": "Missing test fixtures (input.txt or expected.txt)"
     },
