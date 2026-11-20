@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-19T11:02:32.227752+00:00",
+  "generated_at": "2026-11-20T03:43:54.289194+00:00",
   "stats": {
-    "total_solved": 29,
+    "total_solved": 30,
     "by_language": {
       "Go": 17,
-      "C++": 12
+      "C++": 13
     },
     "categories_count": 11
   },
@@ -337,6 +337,18 @@
         "formula_used": "String invariance scan: total unique lengths = 1 + canIncrease (if s[i-1]==s[i]==s[i+1]) + canDecrease (if s[i-1]!=s[i]!=s[i+1])",
         "language": "Go",
         "file": "Strings/2276B_Replace_and_Compress.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2290B",
+        "problem_name": "Stubborn Pen",
+        "title": "Stubborn Pen",
+        "category": "Strings / Greedy",
+        "time_complexity": "O(N) -> Single linear pass over stack buffer.",
+        "space_complexity": "O(1) -> Fixed 105-byte stack char array, ZERO heap allocation.",
+        "formula_used": "switches = (s[0] == 'B') + count(s[i] == s[i - 1])",
+        "language": "C++",
+        "file": "Strings/2290B_Stubborn_Pen.cpp",
         "has_tests": false
       }
     ],
