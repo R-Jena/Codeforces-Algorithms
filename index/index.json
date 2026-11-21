@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-20T03:43:54.289194+00:00",
+  "generated_at": "2026-11-21T06:56:59.833541+00:00",
   "stats": {
-    "total_solved": 30,
+    "total_solved": 31,
     "by_language": {
       "Go": 17,
-      "C++": 13
+      "C++": 14
     },
     "categories_count": 11
   },
@@ -231,6 +231,18 @@
         "formula_used": "min(b, a - b) if a > b else -1",
         "language": "Go",
         "file": "Math/2276A_Perfect_Sandwiches.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2290A",
+        "problem_name": "Three Piles",
+        "title": "Three Piles",
+        "category": "Math / Implementation",
+        "time_complexity": "O(1) -> Direct arithmetic comparison.",
+        "space_complexity": "O(1) -> Three stack integers, zero allocation.",
+        "formula_used": "b - a == 1 && c - b == 1 (given a <= b <= c)",
+        "language": "C++",
+        "file": "Math/2290A_Three_Piles.cpp",
         "has_tests": false
       },
       {
