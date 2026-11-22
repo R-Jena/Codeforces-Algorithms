@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-21T06:56:59.833541+00:00",
+  "generated_at": "2026-11-22T05:10:51.358826+00:00",
   "stats": {
-    "total_solved": 31,
+    "total_solved": 32,
     "by_language": {
       "Go": 17,
-      "C++": 14
+      "C++": 15
     },
     "categories_count": 11
   },
@@ -133,6 +133,18 @@
         "formula_used": "s_new \u2208 {a_i, s + a_i, 2s + a_i}; track only min_s and max_s",
         "language": "Go",
         "file": "Greedy/2274B_Prefix.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2288C",
+        "problem_name": "Reimu Hakurei and the Youkai",
+        "title": "Reimu Hakurei and the Youkai",
+        "category": "Greedy / Sorting / Math",
+        "time_complexity": "O(N log N) -> Single sort + linear bound evaluation.",
+        "space_complexity": "O(N) -> Flat static array, ZERO dynamic allocation.",
+        "formula_used": "h_i = (a_i - 1) / x + 1; ans = max(0, max_{1 <= i <= n-1}(h_i - i))",
+        "language": "C++",
+        "file": "Greedy/2288C_Reimu_Hakurei_and_the_Youkai.cpp",
         "has_tests": false
       },
       {

@@ -26,6 +26,7 @@ Automated problem index categorized by algorithmic taxonomy.
 | [Floor of MEX (Easy Version)](../Greedy/2262A1_Floor_of_MEX_Easy.go) | Greedy / Constructive Algorithms | O(N) -> Constructive maximal subset using difference array. | O(N) -> Single difference array allocation. | diff[a_k * k]++, diff[min(n, (a_k+1)*k)]--; Maximal subset bypasses forbidden ranges |
 | [K Is Important](../Greedy/2268A_K_Is_Important.go) | Greedy / Math | O(N) -> Pure mathematical reduction of the state space. | O(N) -> Array storage, O(1) auxiliary space. | ops = min(k-1, n-k+1); score = sum(max(pairs)) + sum(middle_removals_if_any) |
 | [Prefix](../Greedy/2274B_Prefix.go) | Math / Greedy | O(N) -> State space collapse to tracking min/max prefix sums | O(1) -> Bare-metal constant space | s_new ∈ {a_i, s + a_i, 2s + a_i}; track only min_s and max_s |
+| [Reimu Hakurei and the Youkai](../Greedy/2288C_Reimu_Hakurei_and_the_Youkai.cpp) | Greedy / Sorting / Math | O(N log N) -> Single sort + linear bound evaluation. | O(N) -> Flat static array, ZERO dynamic allocation. | h_i = (a_i - 1) / x + 1; ans = max(0, max_{1 <= i <= n-1}(h_i - i)) |
 | [Letters Down](../Greedy/2290D_Letters_Down.cpp) | Greedy / Strings | O(N) -> Single pass with interval marking. | O(1) -> 26-element boolean array for the alphabet. | Total unique alphabet adjacent edges required to bridge all differing pairs. |
 
 ## Math

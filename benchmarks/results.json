@@ -1,7 +1,7 @@
 {
-  "benchmark_timestamp": "2026-11-21T06:56:59.795940+00:00",
+  "benchmark_timestamp": "2026-11-22T05:10:51.298777+00:00",
   "runs_per_solution": 5,
-  "total_solutions": 31,
+  "total_solutions": 32,
   "results": [
     {
       "file": "Binary_Search/2290G1_Lakeside_Trail_Easy.cpp",
@@ -60,6 +60,12 @@
     {
       "file": "Greedy/2274B_Prefix.go",
       "language": "Go",
+      "status": "SKIPPED",
+      "reason": "Missing test fixtures (input.txt or expected.txt)"
+    },
+    {
+      "file": "Greedy/2288C_Reimu_Hakurei_and_the_Youkai.cpp",
+      "language": "C++",
       "status": "SKIPPED",
       "reason": "Missing test fixtures (input.txt or expected.txt)"
     },
