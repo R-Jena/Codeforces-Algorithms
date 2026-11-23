@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-22T05:10:51.358826+00:00",
+  "generated_at": "2026-11-23T10:55:07.624047+00:00",
   "stats": {
-    "total_solved": 32,
+    "total_solved": 33,
     "by_language": {
       "Go": 17,
-      "C++": 15
+      "C++": 16
     },
     "categories_count": 11
   },
@@ -243,6 +243,18 @@
         "formula_used": "min(b, a - b) if a > b else -1",
         "language": "Go",
         "file": "Math/2276A_Perfect_Sandwiches.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2289F",
+        "problem_name": "Problem from Malinovka",
+        "title": "Problem from Malinovka",
+        "category": "Math / Number Theory / Graphs",
+        "time_complexity": "O(N sqrt(N) * density) -> Bit-packed L3-cache-friendly triangle listing.",
+        "space_complexity": "O(N log N) -> Compressed uint16_t/uint32_t flat arrays (~19 MB).",
+        "formula_used": "x=pq*u^2, y=qr*v^2, z=rp*w^2; p=1 folded on-the-fly, p>=2 via single-fetch tag_w[]",
+        "language": "C++",
+        "file": "Math/2289F_Problem_from_Malinovka.cpp",
         "has_tests": false
       },
       {

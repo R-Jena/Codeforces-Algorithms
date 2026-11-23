@@ -40,6 +40,7 @@ Automated problem index categorized by algorithmic taxonomy.
 | [The Projections of Paco](../Math/2274A_The_Projections_of_Paco.go) | Math | O(N) | O(1) | pos = 2 * a_i - pos; solve for initial p giving final pos = 0 |
 | [In Search of Convenience](../Math/2275A_in_search_of_convenience.go) | Math | O(1) | O(1) | (x - x0)^2 + (y - y0)^2 = R^2; setting y = y0 simplifies to (x0 + R, y0) |
 | [Perfect Sandwiches](../Math/2276A_Perfect_Sandwiches.go) | Math | O(1) -> Pure mathematical derivation, zero loops. | O(1) -> Only primitive variables used. | min(b, a - b) if a > b else -1 |
+| [Problem from Malinovka](../Math/2289F_Problem_from_Malinovka.cpp) | Math / Number Theory / Graphs | O(N sqrt(N) * density) -> Bit-packed L3-cache-friendly triangle listing. | O(N log N) -> Compressed uint16_t/uint32_t flat arrays (~19 MB). | x=pq*u^2, y=qr*v^2, z=rp*w^2; p=1 folded on-the-fly, p>=2 via single-fetch tag_w[] |
 | [Three Piles](../Math/2290A_Three_Piles.cpp) | Math / Implementation | O(1) -> Direct arithmetic comparison. | O(1) -> Three stack integers, zero allocation. | b - a == 1 && c - b == 1 (given a <= b <= c) |
 | [Value Counters](../Math/2290F_Value_Counters.cpp) | Math / Constructive Algorithms | O(N) -> Single mathematical pass to determine unique positions. | O(N) -> Flat arrays for permutation construction. | pos = b[v] + n + 1 - v; Derived from canceling out L_v in pair counts. |
 
