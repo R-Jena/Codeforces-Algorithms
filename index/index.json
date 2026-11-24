@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-23T10:55:07.624047+00:00",
+  "generated_at": "2026-11-24T05:19:19.263457+00:00",
   "stats": {
-    "total_solved": 33,
+    "total_solved": 34,
     "by_language": {
       "Go": 17,
-      "C++": 16
+      "C++": 17
     },
     "categories_count": 11
   },
@@ -389,6 +389,18 @@
       }
     ],
     "Trees": [
+      {
+        "problem_id": "2289E",
+        "problem_name": "The Problem from Silach",
+        "title": "The Problem from Silach",
+        "category": "Trees / Data Structures / Leftist Heap",
+        "time_complexity": "O(N log N) -> Worst-case O(log N) Leftist Max-Heap merge & pop.",
+        "space_complexity": "O(N) -> Flat static arrays, ZERO std::set / heap allocation.",
+        "formula_used": "x in W(L) survives match u iff x < max(W(R)) + d; eliminated x gets ans[x] = dep[x] - dep[u]",
+        "language": "C++",
+        "file": "Trees/2289E_The_Problem_from_Silach.cpp",
+        "has_tests": false
+      },
       {
         "problem_id": "2290H",
         "problem_name": "Extra Road",

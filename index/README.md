@@ -81,6 +81,7 @@ Automated problem index categorized by algorithmic taxonomy.
 
 | Problem | Category | Time | Space | Formula/Notes |
 |---|---|---|---|---|
+| [The Problem from Silach](../Trees/2289E_The_Problem_from_Silach.cpp) | Trees / Data Structures / Leftist Heap | O(N log N) -> Worst-case O(log N) Leftist Max-Heap merge & pop. | O(N) -> Flat static arrays, ZERO std::set / heap allocation. | x in W(L) survives match u iff x < max(W(R)) + d; eliminated x gets ans[x] = dep[x] - dep[u] |
 | [Extra Road](../Trees/2290H_Extra_Road.cpp) | Trees / Greedy | O(N) -> Pure array-based DFS traversing. | O(N) -> Flat static arrays (Forward Star), ZERO dynamic allocation. | K = max(third_max_at_root, max_{x!=1}(second_max_at_x)); ans = n - K |
 
 ## Two Pointers
