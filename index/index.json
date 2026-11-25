@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-24T05:19:19.263457+00:00",
+  "generated_at": "2026-11-25T07:41:59.519754+00:00",
   "stats": {
-    "total_solved": 34,
+    "total_solved": 35,
     "by_language": {
       "Go": 17,
-      "C++": 17
+      "C++": 18
     },
     "categories_count": 11
   },
@@ -307,6 +307,18 @@
         "formula_used": "prefix_sum[r] % k == prefix_sum[l-1] % k with a sliding delayed map (delay = k)",
         "language": "Go",
         "file": "Prefix_Sum/2276C_Subarrays.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2289D",
+        "problem_name": "Problem from Yuzhnouralsk",
+        "title": "Problem from Yuzhnouralsk",
+        "category": "Prefix Sum / Divide and Conquer / Math",
+        "time_complexity": "O(N log N) -> Flat-array Merge Sort inversion count.",
+        "space_complexity": "O(N) -> Two static long long arrays (~3.2 MB), ZERO heap allocation.",
+        "formula_used": "Op at i swaps P[i-1] and P[i]. Valid iff all P[k] >= 0; min ops = inversions(P[1..n]).",
+        "language": "C++",
+        "file": "Prefix_Sum/2289D_Problem_from_Yuzhnouralsk.cpp",
         "has_tests": false
       }
     ],

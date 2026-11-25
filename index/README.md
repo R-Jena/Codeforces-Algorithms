@@ -55,6 +55,7 @@ Automated problem index categorized by algorithmic taxonomy.
 | Problem | Category | Time | Space | Formula/Notes |
 |---|---|---|---|---|
 | [Subarrays](../Prefix_Sum/2276C_Subarrays.go) | Prefix Sum / Math | O(N) -> Single pass with delayed mapping. | O(N) -> Array allocations for prefixes and tracking counts. | prefix_sum[r] % k == prefix_sum[l-1] % k with a sliding delayed map (delay = k) |
+| [Problem from Yuzhnouralsk](../Prefix_Sum/2289D_Problem_from_Yuzhnouralsk.cpp) | Prefix Sum / Divide and Conquer / Math | O(N log N) -> Flat-array Merge Sort inversion count. | O(N) -> Two static long long arrays (~3.2 MB), ZERO heap allocation. | Op at i swaps P[i-1] and P[i]. Valid iff all P[k] >= 0; min ops = inversions(P[1..n]). |
 
 ## Sorting
 
