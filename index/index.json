@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-25T07:41:59.519754+00:00",
+  "generated_at": "2026-11-26T08:09:06.550610+00:00",
   "stats": {
-    "total_solved": 35,
+    "total_solved": 36,
     "by_language": {
       "Go": 17,
-      "C++": 18
+      "C++": 19
     },
     "categories_count": 11
   },
@@ -371,6 +371,18 @@
         "formula_used": "Monotonic stack simulation for document cancellation ('1' push, '2' pop/print, '3' print)",
         "language": "Go",
         "file": "Stacks/2275B_did_not_go_to_print.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2289C",
+        "problem_name": "Problem from Ust-Katav",
+        "title": "Problem from Ust-Katav",
+        "category": "Stacks / Math / Monotonic Stack",
+        "time_complexity": "O(N) -> Single-pass monotonic stack without L/R arrays.",
+        "space_complexity": "O(N) -> Only two flat int arrays (~1.6 MB), ZERO heap allocation.",
+        "formula_used": "a = i - L[i], b = R[i] - i; contribution = (a == 1 || b == 1) ? (a + b - 1) : 2",
+        "language": "C++",
+        "file": "Stacks/2289C_Problem_from_Ust_Katav.cpp",
         "has_tests": false
       }
     ],

@@ -70,6 +70,7 @@ Automated problem index categorized by algorithmic taxonomy.
 | Problem | Category | Time | Space | Formula/Notes |
 |---|---|---|---|---|
 | [Did Not Go to Print](../Stacks/2275B_did_not_go_to_print.go) | Stacks | O(N) | O(N) | Monotonic stack simulation for document cancellation ('1' push, '2' pop/print, '3' print) |
+| [Problem from Ust-Katav](../Stacks/2289C_Problem_from_Ust_Katav.cpp) | Stacks / Math / Monotonic Stack | O(N) -> Single-pass monotonic stack without L/R arrays. | O(N) -> Only two flat int arrays (~1.6 MB), ZERO heap allocation. | a = i - L[i], b = R[i] - i; contribution = (a == 1 \|\| b == 1) ? (a + b - 1) : 2 |
 
 ## Strings
 
