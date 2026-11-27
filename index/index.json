@@ -1,11 +1,11 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-26T08:09:06.550610+00:00",
+  "generated_at": "2026-11-27T06:44:49.081864+00:00",
   "stats": {
-    "total_solved": 36,
+    "total_solved": 37,
     "by_language": {
       "Go": 17,
-      "C++": 19
+      "C++": 20
     },
     "categories_count": 11
   },
@@ -145,6 +145,18 @@
         "formula_used": "h_i = (a_i - 1) / x + 1; ans = max(0, max_{1 <= i <= n-1}(h_i - i))",
         "language": "C++",
         "file": "Greedy/2288C_Reimu_Hakurei_and_the_Youkai.cpp",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2289B",
+        "problem_name": "Problem from Chebarkul",
+        "title": "Problem from Chebarkul",
+        "category": "Greedy / Sliding Window / Implementation",
+        "time_complexity": "O(N) -> Single streaming pass.",
+        "space_complexity": "O(1) -> ZERO array storage, pure register variables.",
+        "formula_used": "Window size W = n - k + 1; position i is invariant iff a[i .. i+W-1] are all equal.",
+        "language": "C++",
+        "file": "Greedy/2289B_Problem_from_Chebarkul.cpp",
         "has_tests": false
       },
       {
