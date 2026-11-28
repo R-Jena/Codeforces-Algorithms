@@ -1,10 +1,10 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-11-27T06:44:49.081864+00:00",
+  "generated_at": "2026-11-28T06:14:01.935937+00:00",
   "stats": {
-    "total_solved": 37,
+    "total_solved": 38,
     "by_language": {
-      "Go": 17,
+      "Go": 18,
       "C++": 20
     },
     "categories_count": 11
@@ -255,6 +255,18 @@
         "formula_used": "min(b, a - b) if a > b else -1",
         "language": "Go",
         "file": "Math/2276A_Perfect_Sandwiches.go",
+        "has_tests": false
+      },
+      {
+        "problem_id": "2289A",
+        "problem_name": "Problem from Dolgoderevenskoye",
+        "title": "Problem from Dolgoderevenskoye",
+        "category": "Math / Number Theory / Game Theory",
+        "time_complexity": "O(1) per test case -> Single bitwise AND check.",
+        "space_complexity": "O(1) -> Fixed 64KB I/O buffers, zero heap allocations per query.",
+        "formula_used": "O == E iff v2(x) == 1 iff (x & 3) == 2; Artem wins iff (x & 3) != 2",
+        "language": "Go",
+        "file": "Math/2289A_Problem_from_Dolgoderevenskoye.go",
         "has_tests": false
       },
       {

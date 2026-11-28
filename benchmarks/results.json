@@ -1,7 +1,7 @@
 {
-  "benchmark_timestamp": "2026-11-27T06:44:49.035373+00:00",
+  "benchmark_timestamp": "2026-11-28T06:14:01.884484+00:00",
   "runs_per_solution": 5,
-  "total_solutions": 37,
+  "total_solutions": 38,
   "results": [
     {
       "file": "Binary_Search/2290G1_Lakeside_Trail_Easy.cpp",
@@ -119,6 +119,12 @@
     },
     {
       "file": "Math/2276A_Perfect_Sandwiches.go",
+      "language": "Go",
+      "status": "SKIPPED",
+      "reason": "Missing test fixtures (input.txt or expected.txt)"
+    },
+    {
+      "file": "Math/2289A_Problem_from_Dolgoderevenskoye.go",
       "language": "Go",
       "status": "SKIPPED",
       "reason": "Missing test fixtures (input.txt or expected.txt)"
